@@ -1,0 +1,68 @@
+LA ASCENSION S.A
+Bogotá, Colombia
+Cra. 21 No. 33-28 Teusaquillo
+PBX: (57-1) 338 9090 Ext. 1727
+Julian Camilo Cruz F.
+CEL:3209835498
+
+////////////////////////////////////////////////////////////
+
+Bases suministradas:
+
+Contratos: Base de clientes
+Dato-Tipo-Definicion
+Doc entry-INTEGER-Identificador de los contratos
+Nombre UEN-STRING-Unidad estratigica de negocio (Sector en el cual se comecializa)
+Nombre Sub UEN-STRING-Sub Unidad estratigica de negocio (Sector especifico en el cual se comecializa)
+Convenio actual-INTEGER-Codigo interno de empresa en la que se comercializo
+Nombre Convenio-STRING-Nombre de empresa en la que se comercializo
+Fecha real contrato-DATE-Fecha en la que se comercializo el contrato
+Numero Contrato-STRING-Numero del contrato fisico o digital
+Estado del Contrato-STRING-Estado del cliente en la base de datos
+Tipo de Contrato-STRING-Clasificacion del contrato según la antigüedad del cliente
+Codigo plan-STRING-Codigo interno del plan que se comercializo
+Nombre Plan-STRING-Nombre del plan que se comercializo
+Sucursal-STRING-Sede en la que se comercizo el contrato
+
+Complementarios: Seguros y asistencias con los que cuentan los clientes
+Dato-Tipo-Definicion
+Docentry-INTEGER-Identificador de los contratos
+Sexo-STRING-Genero del titular del complementario
+Código Seguro-STRING-Codigo interno del complementario
+Nombre Seguro-STRING-Nombre del seguro a comercializar
+F. nacimiento-DATE-Fecha de nacimiento del titular del complementario
+F. retiro compl.-DATE-Fecha de retiro del complementario
+CreateDate-DATE-Fecha de creacion del complementario
+Tipo complementario-STRING-Clasificacion del complementario
+
+Servicios funerarios: Base de fallecimientos reportados con la empresa
+Dato-Tipo-Definicion
+DocNum-INTEGER-Identificador del servicio funerario
+Tipo Prestacion-STRING-Clasificacion de la prestacion del servicio
+CreateDate-DATE-fecha de creacion del servicio en el sistema
+DocEntry-INTEGER-Identificador de los contratos
+Ciudad Fallecimiento-INTEGER-Codigo del municipio de fallecimiento
+Fecha Fallecimiento-DATE-Fecha de fallecimiento del cliente
+Edad-INTEGER-Edad del fallecido
+Causa-STRING-Causal del fellecimiento del cliente
+Parentesco-STRING-Parentesco del beneficiario fallecido con el titular del contrato
+
+Beneficiarios: Base de beneficiarios que cuentan con cobertura de servicio de prevision
+Dato-Tipo-Definicion
+DocEntry-INTEGER-Identificador de los contratos
+Sexo-STRING-Genero del beneficiario
+Numero de Documento-STRING-Documento del beneficiario
+Parentesco-STRING-Parentesco del beneficiario con el titular del contrato
+Fecha Nacimiento-DATE-Fecha de nacimiento del beneficiario
+Fecha Retiro-DATE-Fecha de retiro del beneficiario
+Fecha Siniestro-DATE-Fecha de fallecimiento del beneficiario
+Fecha Crea Contrato-DATE-Fecha de ingreso del beneficiario
+
+////////////////////////////////////////////////////////////
+
+Fuentes externas:
+
+Dane:
+Proyeccion poblacional 2018-2026: https://www.dane.gov.co/files/censo2018/proyecciones-de-poblacion/Municipal/anexo-proyecciones-poblacion-Municipal_2018-2026.xlsx
+Defunsiones 2021: https://www.dane.gov.co/files/investigaciones/poblacion/2022/14-febrero-2022/defunciones-no-fetales2020p-cuadro-acumulado-2020.xls
+Defunsiones 2021: https://www.dane.gov.co/files/investigaciones/poblacion/2022/14-febrero-2022/defunciones-no-fetales2021p-cuadro-unificado-III-2021.xls
