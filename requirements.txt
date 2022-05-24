@@ -9,3 +9,6 @@ bs4
 dash_bootstrap_components
 plotly
 ipykernel
+boto3
+matplotlib
+pyplot
